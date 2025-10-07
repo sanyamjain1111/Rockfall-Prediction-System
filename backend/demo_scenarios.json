@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Normal Conditions",
+    "conditions": {
+      "rainfall_24h": 5,
+      "rainfall_72h": 15,
+      "days_since_blast": 10,
+      "temperature": 22
+    },
+    "expected": "98% low risk, no alerts"
+  },
+  {
+    "id": 2,
+    "name": "Heavy Rainfall",
+    "conditions": {
+      "rainfall_24h": 95,
+      "rainfall_72h": 180,
+      "days_since_blast": 10,
+      "temperature": 18
+    },
+    "expected": "10-15% high risk, 5-8 alerts"
+  },
+  {
+    "id": 3,
+    "name": "Post-Blast Alert",
+    "conditions": {
+      "rainfall_24h": 20,
+      "rainfall_72h": 40,
+      "days_since_blast": 1,
+      "temperature": 25
+    },
+    "expected": "5-10% high risk, 3-5 alerts"
+  },
+  {
+    "id": 4,
+    "name": "Critical Multi-Factor",
+    "conditions": {
+      "rainfall_24h": 120,
+      "rainfall_72h": 250,
+      "days_since_blast": 2,
+      "temperature": 15
+    },
+    "expected": "20-25% high risk, 12-15 alerts"
+  }
+]

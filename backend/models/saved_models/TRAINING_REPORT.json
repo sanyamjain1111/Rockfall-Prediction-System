@@ -1,0 +1,8 @@
+{
+  "random_forest_auc": 0.504024,
+  "xgboost_auc": 0.5103066666666667,
+  "cnn_auc": 0.9976938401400697,
+  "lstm_auc": 0.9630631449077018,
+  "ensemble_type": "stacked",
+  "ensemble_auc": 0.5014133333333334
+}

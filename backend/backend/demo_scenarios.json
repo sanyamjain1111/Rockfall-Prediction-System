@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Normal Conditions",
+    "rainfall_24h": 5,
+    "rainfall_72h": 15,
+    "days_since_blast": 10,
+    "temperature": 22
+  },
+  {
+    "id": 2,
+    "name": "Heavy Rainfall",
+    "rainfall_24h": 95,
+    "rainfall_72h": 180,
+    "days_since_blast": 10,
+    "temperature": 18
+  },
+  {
+    "id": 3,
+    "name": "Post-Blast Alert",
+    "rainfall_24h": 20,
+    "rainfall_72h": 40,
+    "days_since_blast": 1,
+    "temperature": 25
+  },
+  {
+    "id": 4,
+    "name": "Critical Multi-Factor",
+    "rainfall_24h": 120,
+    "rainfall_72h": 250,
+    "days_since_blast": 2,
+    "temperature": 15
+  }
+]

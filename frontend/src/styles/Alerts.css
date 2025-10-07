@@ -1,0 +1,14 @@
+.alert-panel { padding: 16px; height: 100%; display: flex; flex-direction: column; }
+.alert-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.alert-count { background: var(--danger); color: white; padding: 4px 8px; border-radius: 10px; font-size: 12px; font-weight: 800; }
+.alert-controls { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+.alert-list { display: flex; flex-direction: column; gap: 10px; overflow-y: auto; }
+.alert-item { background: rgba(255,255,255,0.05); padding: 12px; border-radius: 8px; border-left: 4px solid; animation: slideIn .3s ease-out; }
+.alert-item:hover { transform: translateX(3px); background: rgba(255,255,255,0.08); }
+.alert-item.warning { border-left-color: var(--danger); }
+.alert-item.advisory { border-left-color: var(--warning); }
+.alert-item.watch { border-left-color: var(--accent); }
+.alert-level-badge { display: inline-block; padding: 4px 8px; border-radius: 4px; color: white; font-size: 11px; font-weight: 800; margin-bottom: 6px; }
+.alert-message { font-size: 13px; margin-bottom: 6px; }
+.alert-time { font-size: 11px; color: var(--text-gray); }
+.empty-state { text-align: center; color: var(--text-gray); padding: 20px; }

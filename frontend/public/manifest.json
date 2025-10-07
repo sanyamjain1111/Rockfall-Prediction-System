@@ -1,0 +1,10 @@
+{
+  "name": "Rockfall Prediction System",
+  "short_name": "Rockfall AI",
+  "description": "AI-powered rockfall prediction for mining safety",
+  "theme_color": "#1e40af",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": ".",
+  "icons": []
+}

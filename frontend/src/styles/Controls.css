@@ -1,0 +1,14 @@
+.controls-panel { padding: 16px; }
+.control-section { margin-bottom: 24px; }
+.section-title { font-size: 12px; color: var(--text-gray); text-transform: uppercase; margin-bottom: 10px; }
+.slider-control { margin-bottom: 16px; }
+.slider-label { display: flex; justify-content: space-between; font-size: 14px; }
+.slider-value { color: var(--accent); font-weight: 600; }
+input[type="range"] { width: 100%; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.1); outline: none; }
+input[type="range"]::-webkit-slider-thumb { appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--accent); box-shadow: 0 2px 6px rgba(0,0,0,0.4); cursor: pointer; }
+.btn-primary { width: 100%; padding: 12px; background: linear-gradient(135deg, var(--accent), var(--primary)); border: none; border-radius: 8px; color: #fff; font-weight: 700; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.btn-primary:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(59,130,246,0.35); }
+.btn-primary:disabled { opacity: .6; cursor: not-allowed; }
+.scenario-select { width: 100%; padding: 10px; border-radius: 6px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-light); }
+.alert-ack-button { padding: 8px 12px; background: transparent; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; color: var(--text-light); cursor: pointer; }
+.alert-ack-button:hover { background: rgba(255,255,255,0.08); }

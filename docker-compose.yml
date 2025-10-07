@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: rockfall-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+  frontend:
+    build: ./frontend
+    container_name: rockfall-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+      - REACT_APP_AUTO_REFRESH_INTERVAL=30000
+      - REACT_APP_ALERT_SOUND_ENABLED=true
+      - REACT_APP_MAP_CENTER_LAT=23.5
+      - REACT_APP_MAP_CENTER_LON=85.3
+      - REACT_APP_MAP_ZOOM=15
+    depends_on:
+      - backend
+    restart: unless-stopped

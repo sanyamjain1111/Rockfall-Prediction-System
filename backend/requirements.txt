@@ -1,0 +1,17 @@
+fastapi==0.115.2
+uvicorn==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.6.1
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.3.2
+joblib==1.4.2
+python-dotenv==1.0.1
+httpx==0.27.0
+# Optional (enable when you can)
+# xgboost==2.0.3
+# tensorflow==2.15.0
+# shap==0.44.1
+# rasterio==1.3.10
+# geopandas==1.0.1
+# shapely==2.0.4
